@@ -15,6 +15,7 @@ export class HeaderComponent {
     { label: 'Skills', link: '#skills' },
     { label: 'Experience', link: '#experience' },
     { label: 'Education', link: '#education' },
+    { label: 'Certificates', link: '#certificates' },
     { label: 'Projects', link: '#projects' },
     { label: 'Contact', link: '#contact' }
   ];

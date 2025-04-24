@@ -1,0 +1,119 @@
+.certificates {
+  padding: 80px 0;
+  background-color: var(--surface-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.certificate-card {
+  background: var(--background-color);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.certificate-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  
+  h3 {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+    flex: 1;
+  }
+}
+
+.certificate-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  background-color: white;
+  padding: 4px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.certificate-body {
+  .issuer {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  .date {
+    color: var(--text-color-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+  
+  .credential-id {
+    color: var(--text-color-secondary);
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+  }
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.skill-tag {
+  background: var(--primary-color);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .certificates {
+    padding: 60px 0;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .certificates-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .certificate-card {
+    padding: 20px;
+  }
+}

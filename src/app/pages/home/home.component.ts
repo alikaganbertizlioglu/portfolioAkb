@@ -6,6 +6,7 @@ import { ExperienceComponent } from '../../components/experience/experience.comp
 import { ProjectsComponent } from '../../components/projects/projects.component';
 import { ContactComponent } from '../../components/contact/contact.component';
 import { EducationComponent } from '../../components/education/education.component';
+import { CertificatesComponent } from '../../components/certificates/certificates.component';
 
 @Component({
   selector: 'app-home',
@@ -16,6 +17,7 @@ import { EducationComponent } from '../../components/education/education.compone
     SkillsComponent,
     ExperienceComponent,
     EducationComponent,
+    CertificatesComponent,
     ProjectsComponent,
     ContactComponent
   ],
@@ -25,6 +27,7 @@ import { EducationComponent } from '../../components/education/education.compone
     <app-skills></app-skills>
     <app-experience></app-experience>
     <app-education></app-education>
+    <app-certificates></app-certificates>
     <app-projects></app-projects>
     <app-contact></app-contact>
   `
