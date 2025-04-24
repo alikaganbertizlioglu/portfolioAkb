@@ -62,7 +62,7 @@
             "ssr": {
               "entry": "src/server.ts"
             },
-            "baseHref": "/portfolioAkb/"
+            "baseHref": "/"
           },
           "configurations": {
             "production": {
