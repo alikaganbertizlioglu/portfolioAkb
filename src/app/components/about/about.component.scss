@@ -1,0 +1,56 @@
+.about {
+  background-color: var(--surface-color);
+  padding: 5rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.about-text {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.about-details {
+  .detail-item {
+    margin-bottom: 1.5rem;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
+    h3 {
+      color: var(--primary-color);
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    p {
+      color: var(--text-color);
+      font-size: 1.1rem;
+    }
+  }
+}

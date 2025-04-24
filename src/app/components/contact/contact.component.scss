@@ -1,0 +1,44 @@
+.contact {
+  padding: 5rem 0;
+  background-color: var(--surface-color);
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-info {
+  margin-bottom: 3rem;
+  
+  h3 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    color: var(--text-color-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.contact-details {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.contact-link {
+  color: var(--primary-color);
+  
+  &:hover {
+    color: var(--hover-color);
+  }
+}

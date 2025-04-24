@@ -1,0 +1,45 @@
+.projects {
+  padding: 5rem 0;
+  background-color: var(--background-color);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.project-card {
+  background-color: var(--surface-color);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid var(--border-color);
+  
+  .project-title {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+  
+  .project-description {
+    color: var(--text-color-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-tech {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    
+    span {
+      background-color: #e9ecef;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  }
+}
